@@ -63,7 +63,8 @@ namespace reportesMunicipales
 
             foreach (Municipality m in municipalities )
             {
-                Console.WriteLine(m.depCode + ", " + m.code);
+                Console.WriteLine(m.depCode + ", " + m.code); 
+                
             }
         }
 
