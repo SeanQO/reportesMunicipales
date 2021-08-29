@@ -41,7 +41,7 @@ namespace reportesMunicipales {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 21 "..\..\MainWindow.xaml"
+        #line 23 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.DataGrid dataGridOne;
         
@@ -49,7 +49,7 @@ namespace reportesMunicipales {
         #line hidden
         
         
-        #line 40 "..\..\MainWindow.xaml"
+        #line 45 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ComboBox comboBoxLetters;
         
@@ -57,7 +57,7 @@ namespace reportesMunicipales {
         #line hidden
         
         
-        #line 43 "..\..\MainWindow.xaml"
+        #line 49 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.DataGrid dataGridTwo;
         
@@ -96,7 +96,7 @@ namespace reportesMunicipales {
             {
             case 1:
             
-            #line 18 "..\..\MainWindow.xaml"
+            #line 19 "..\..\MainWindow.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
             
             #line default
@@ -108,7 +108,7 @@ namespace reportesMunicipales {
             case 3:
             this.comboBoxLetters = ((System.Windows.Controls.ComboBox)(target));
             
-            #line 40 "..\..\MainWindow.xaml"
+            #line 45 "..\..\MainWindow.xaml"
             this.comboBoxLetters.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.letterSelected);
             
             #line default
