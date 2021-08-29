@@ -56,19 +56,22 @@ namespace reportesMunicipales
                 int temp;
                 if (int.TryParse(data[0], out temp))
                 {
-                    municipalities.Add(new Municipality() {depCode = data[0], code = data[1], depName = data[2], name = data[3], type = data[4] });
+                    Municipality m = new Municipality() { depCode = data[0], code = data[1], depName = data[2], name = data[3], type = data[4] };
+                    municipalities.Add(m);
+                    dataGridOne.Items.Add(m);
 
                 }
             }
 
-            foreach (Municipality m in municipalities )
-            {
-                Console.WriteLine(m.depCode + ", " + m.code); 
-                
-            }
         }
 
-        private void loadTable() { 
+        private void loadTableTwo(List<Municipality> filteredMunicipalities)
+        {
+            foreach (Municipality m in filteredMunicipalities)
+            {
+                dataGridOne.Items.Add(m);
+
+            }
 
         }
 
