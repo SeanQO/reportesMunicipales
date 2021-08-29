@@ -27,8 +27,11 @@ namespace reportesMunicipales
 
         public MainWindow()
         {
-            municipalities = new List<Municipality>();
             InitializeComponent();
+
+            municipalities = new List<Municipality>();
+            Char[] comboBoxItems = new[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+            comboBoxLetters.ItemsSource = comboBoxItems;
 
         }
 
