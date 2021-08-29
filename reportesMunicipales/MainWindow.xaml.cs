@@ -70,9 +70,10 @@ namespace reportesMunicipales
 
         private void loadTableTwo(List<Municipality> filteredMunicipalities)
         {
+            dataGridTwo.Items.Clear();
             foreach (Municipality m in filteredMunicipalities)
             {
-                dataGridOne.Items.Add(m);
+                dataGridTwo.Items.Add(m);
 
             }
 
@@ -80,6 +81,30 @@ namespace reportesMunicipales
 
         private void loadBarsGraph() { 
         
+        }
+
+        private void letterSelected(object sender, SelectionChangedEventArgs e)
+        {
+            char selectedLetter = comboBoxLetters.SelectedItem.ToString()[0];
+
+            loadTableTwo(filteredMunicipalities(selectedLetter));
+
+        }
+
+        private List<Municipality> filteredMunicipalities(char letter) {
+            List<Municipality> filteredMunicipalities = new List<Municipality>();
+
+            foreach (Municipality m in municipalities)
+            {
+                if (m.name[0].Equals(char.ToUpperInvariant(letter)))
+                {
+                    filteredMunicipalities.Add(m);
+
+                }
+
+            }
+
+            return filteredMunicipalities;
         }
 
     }

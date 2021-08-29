@@ -37,7 +37,7 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <StackPanel Grid.Row="0" >
-                        <ComboBox x:Name="comboBoxLetters"  Margin="32" HorizontalAlignment="Left" Height="24" Width="88"/>
+                        <ComboBox x:Name="comboBoxLetters"  Margin="32" HorizontalAlignment="Left" Height="24" Width="88" SelectionChanged="letterSelected"/>
                     </StackPanel>
                     <StackPanel Grid.Row="1">
                         <DataGrid x:Name="dataGridTwo" Height="288" Margin="32,0,32,0" CanUserAddRows="false" IsReadOnly="True">
