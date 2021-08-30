@@ -28,3 +28,23 @@ E:\Desktop\u\6to\integrador\tallerIntroC#\reportesMunicipales\reportesMunicipale
 E:\Desktop\u\6to\integrador\tallerIntroC#\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.csproj.CoreCompileInputs.cache
 E:\Desktop\u\6to\integrador\tallerIntroC#\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.exe
 E:\Desktop\u\6to\integrador\tallerIntroC#\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.pdb
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\bin\Debug\reportesMunicipales.exe.config
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\bin\Debug\reportesMunicipales.exe
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\bin\Debug\reportesMunicipales.pdb
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\bin\Debug\WPFToolkit.dll
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.csproj.AssemblyReference.cache
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\MainWindow.g.cs
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\App.g.cs
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales_MarkupCompile.cache
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales_MarkupCompile.lref
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\MainWindow.baml
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.g.resources
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.Properties.Resources.resources
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.csproj.GenerateResource.cache
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.csproj.CoreCompileInputs.cache
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.csproj.CopyComplete
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.exe
+C:\Users\John kennedy landazu\Desktop\icesi\2021-2\Proyecto integrador\reportesMunicipales\reportesMunicipales\obj\Debug\reportesMunicipales.pdb

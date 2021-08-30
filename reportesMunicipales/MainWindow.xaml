@@ -64,7 +64,21 @@
             </TabItem>
 
             <TabItem Header="Reporte 2" >
-               
+                <Grid.Resources>
+                    <local:FruitCollection x:Key="FruitCollection" />
+                </Grid.Resources>
+
+                <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="mcChart"  
+   Width="400" Height="250"  
+   Background="LightSteelBlue">
+                    <DVC:Chart.Series>
+                        <DVC:PieSeries Title="Fruits"  
+            ItemsSource="{StaticResource FruitCollection}"  
+            IndependentValueBinding="{Binding Path=Name}"  
+            DependentValueBinding="{Binding Path=Share}">
+                        </DVC:PieSeries>
+                    </DVC:Chart.Series>
+                </DVC:Chart>
             </TabItem>
         </TabControl>
     </Grid>

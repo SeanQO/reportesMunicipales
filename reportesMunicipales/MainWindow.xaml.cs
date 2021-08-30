@@ -14,8 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using Microsoft.Win32;
-using LiveCharts;
-using LiveCharts.Wpf;
+using System.Windows.Controls.DataVisualization.Charting;
 
 namespace reportesMunicipales
 {
@@ -37,7 +36,10 @@ namespace reportesMunicipales
 
         }
 
-
+        public List<Municipality> GetMunicipalities()
+        {
+            return municipalities;
+        }
 
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -112,6 +114,10 @@ namespace reportesMunicipales
             return filteredMunicipalities;
         }
 
+
+        //report 2
+        
+
     }
 
     public class Municipality { 
@@ -122,5 +128,30 @@ namespace reportesMunicipales
         public String name { get; set; }
         public String type { get; set; }
 
+    }
+
+    class MunicipalityCollection : System.Collections.ObjectModel.Collection<Municipality>
+    {
+
+        MainWindow m = new MainWindow();
+        public MunicipalityCollection()
+        {
+            
+            addMunicipalityes(m.GetMunicipalities);
+        }
+
+        private void addMunicipalityes(Func<List<Municipality>> getMunicipalities)
+        {
+            throw new NotImplementedException();
+            for(int i = 0; i < getMunicipalities.)
+        }
+
+        public void addMunicipalityes(List<Municipality> municipalitiesList)
+        {
+            foreach (Municipality m in municipalitiesList)
+            {
+                Add(m);
+            }
+        }
     }
 }
