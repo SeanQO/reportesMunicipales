@@ -1,9 +1,12 @@
 ﻿<Window x:Class="reportesMunicipales.MainWindow"
+        
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
         xmlns:local="clr-namespace:reportesMunicipales"
+        
         mc:Ignorable="d"
         Title="ReportesMunicipales"  Height="450" Width="800">
     <Grid>
@@ -59,8 +62,10 @@
                     
                 </Grid>
             </TabItem>
-            
-            <TabItem Header="Reporte 2" />
+
+            <TabItem Header="Reporte 2" >
+               
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

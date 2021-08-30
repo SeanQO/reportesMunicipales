@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using Microsoft.Win32;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace reportesMunicipales
 {
@@ -34,6 +36,9 @@ namespace reportesMunicipales
             comboBoxLetters.ItemsSource = comboBoxItems;
 
         }
+
+
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
