@@ -64,9 +64,21 @@
             </TabItem>
 
             <TabItem Header="Reporte 2" >
+                <Grid>
+                    <StackPanel>
+                        <charting:Chart  Name="report2Chart" Title="Municipios según su tipo" 
+		VerticalAlignment="Top" Margin="33,0,0,620" Height="262">
+                            <charting:BarSeries  DependentValuePath="Value" 
+		IndependentValuePath="Key" ItemsSource="{Binding}" 
+		IsSelectionEnabled="True"/>
+                        </charting:Chart>
+                    </StackPanel>
+                </Grid>
 
 
-                <charting:Chart Binding
+
+
+
             </TabItem>
         </TabControl>
     </Grid>

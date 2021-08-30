@@ -25,6 +25,7 @@ namespace reportesMunicipales
     {
 
       public List<Municipality> municipalities { get; set; }
+       
 
         public MainWindow()
         {
@@ -33,6 +34,7 @@ namespace reportesMunicipales
             municipalities = new List<Municipality>();
             Char[] comboBoxItems = new[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
             comboBoxLetters.ItemsSource = comboBoxItems;
+           
 
         }
 
@@ -49,7 +51,7 @@ namespace reportesMunicipales
             {
                 csvPath = openFileDlg.FileName;
                 readCsvFile(csvPath);
-
+                showReport2();
             }
 
         }
@@ -113,8 +115,66 @@ namespace reportesMunicipales
 
 
         //report 2
-        
 
+        private void showReport2()
+        {
+            List<KeyValuePair<string, int>> valueList = new List<KeyValuePair<string, int>>();
+            int municipio = numMunicipio();
+            int isla = numIsla();
+            int AreaNoMu = numAreaNoMu();
+            
+            
+            valueList.Add(new KeyValuePair<string, int>("Area No Mu", AreaNoMu));
+            valueList.Add(new KeyValuePair<string, int>("Isla", isla));
+            valueList.Add(new KeyValuePair<string, int>("Municipio", municipio));
+
+            report2Chart.DataContext = valueList;
+
+        }
+
+        private int numMunicipio(){
+            int counter = 0;
+            foreach (Municipality m in municipalities)
+            {
+                Console.WriteLine(m.type);
+                if (m.type.Equals("Municipio", StringComparison.OrdinalIgnoreCase))
+                {
+                   counter++;
+                }
+
+            }
+            return counter;
+        }
+
+        private int numIsla()
+        {
+            int counter = 0;
+            foreach (Municipality m in municipalities)
+            {
+                Console.WriteLine(m.type);
+                if (m.type.Equals("Isla", StringComparison.OrdinalIgnoreCase))
+                {
+                    counter++;
+                }
+
+            }
+            return counter;
+        }
+
+        private int numAreaNoMu()
+        {
+            int counter = 0;
+            foreach (Municipality m in municipalities)
+            {
+                Console.WriteLine(m.type);
+                if (m.type.Equals("Área no municipalizada", StringComparison.OrdinalIgnoreCase))
+                {
+                    counter++;
+                }
+
+            }
+            return counter;
+        }
     }
 
     public class Municipality { 
@@ -127,27 +187,7 @@ namespace reportesMunicipales
 
     }
 
-    class MunicipalityCollection : System.Collections.ObjectModel.Collection<Municipality>
-    {
-
-        MainWindow m = new MainWindow();
-        public MunicipalityCollection()
-        {
-            
-            addMunicipalityes(m.municipalities);
-        }
-
-       
-
-
-
-
-        public void addMunicipalityes(List<Municipality> municipalitiesList)
-        {
-            foreach (Municipality m in municipalitiesList)
-            {
-                Add(new Municipality {type = m.type, depName = m.depName });
-            }
-        }
-    }
+   
+        
+    
 }
