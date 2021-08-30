@@ -24,7 +24,7 @@ namespace reportesMunicipales
     public partial class MainWindow : Window
     {
 
-        List<Municipality> municipalities;
+      public List<Municipality> municipalities { get; set; }
 
         public MainWindow()
         {
@@ -36,10 +36,7 @@ namespace reportesMunicipales
 
         }
 
-        public List<Municipality> GetMunicipalities()
-        {
-            return municipalities;
-        }
+       
 
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -137,20 +134,19 @@ namespace reportesMunicipales
         public MunicipalityCollection()
         {
             
-            addMunicipalityes(m.GetMunicipalities);
+            addMunicipalityes(m.municipalities);
         }
 
-        private void addMunicipalityes(Func<List<Municipality>> getMunicipalities)
-        {
-            throw new NotImplementedException();
-            for(int i = 0; i < getMunicipalities.)
-        }
+       
+
+
+
 
         public void addMunicipalityes(List<Municipality> municipalitiesList)
         {
             foreach (Municipality m in municipalitiesList)
             {
-                Add(m);
+                Add(new Municipality {type = m.type, depName = m.depName });
             }
         }
     }
